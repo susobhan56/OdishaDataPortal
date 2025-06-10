@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odisha Data Portal</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.4;
+      background: #dcfafe;
+      overflow-x: hidden;
+      margin: 0;
+    }
+    header {
+      background: #f8e6e6;
+      color: #100526;
+      padding: 5px 0 0 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;  
+    }
+    header h1 {
+      text-align: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 42px;
+      font-style: normal;
+      font-weight:normal;
+      text-transform: uppercase;
+    }
+    nav ul {
+      display: flex;
+      background: #727272;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 38px;
+      margin: 0;
+      padding: 7px;
+    }
+    nav a {
+      text-decoration: none;
+      color: rgb(236, 236, 239);
+      font-weight: bold;
+      font-family: Segoe UI;
+    }
+    nav a:hover {
+      background: rgb(9, 7, 139);
+      padding: 5px;
+      border-radius: 5px;
+      transition: background 0.6s ease;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 350px;
+    }
+    .see-all-link {
+      transition: background 0.5s, color 0.3s;
+      border-radius: 9px;
+      margin-left: 0px;
+      display: inline-block;
+    }
+    .see-all-link:hover {
+      background: #b3b6f4;
+      color: #100526;
+      padding: 0.3em
+    }
+    .vertical-divider {
+      width: 1.5px; /* Increased width */
+      background: #a3a3a3;
+      border-radius: 4px;
+      margin-left: 20px;
+      height: auto;
+      align-self: stretch;
+    }    
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 900px;
+      height: fit-content;
+      padding: 2em 0 0 0;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2em;
+      border-radius: 15px;
+      border: none;
+      margin-bottom: 0;
+      text-align: left;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      width: 100%;
+      line-height: 1.5;
+      max-width: 770px;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .see-all-link {
+      transition: background 0.5s, color 0.3s;
+      border-radius: 9px;
+      padding: 1em;
+      display: inline-block;
+    }
+    .see-all-link:hover {
+      background: #b3b6f4;
+      color: #100526;
+    }
+    .card-content {
+      display: block;
+      width: 100%;
+    }
+    section {
+      position: relative;
+      padding: 2em 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    footer {
+      background: #ffffff;
+      color: rgb(18, 20, 54);
+      font-weight: bold;
+      text-align: center;
+      font-size: larger;
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+      padding: 1em;
+    }
+ 
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation Section -->    
+  <header>
+        <div style="display: flex; align-items: center; justify-content: center; 
+                    padding-top: 10px; gap: 0">
+            <img src="../../Images/ODPLogo.png" alt="Odisha Logo" style="width: 130px; 
+                        height: 120px; vertical-align: middle; border-radius: 8px;">
+            <h1 style="margin: 0; font-size: 42px; font-family:'Gill Sans', 
+                      'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-right: 50px;
+                      font-weight: normal; text-transform: uppercase; color: #100526;">
+                      <a href = "../../tr2.html" style="text-decoration: none; color:hsl(245, 100%, 12%)">
+                Odisha Data Portal
+                      </a>
+            </h1>
+        </div>
+        <nav>
+            <ul class="flex">
+                <li><a href="../demographyL2.html">Demography</a></li>
+                <li><a href="../../Health/healthL2.html">Health</a></li>
+                <li><a href="../../Education/educationL2.html">Education</a></li>
+                <li><a href="../../Employment/employmentL2.html">Employment</a></li>
+                <li><a href="../../Migration & Urbanization/m&uL2.html">Migration & Urbanization</a></li>
+                <li><a href="../../Ageing/ageingL2.html">Ageing</a></li>
+                <li><a href="../../Contact Us/contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>  
+<br><br>
+  <h2 style = "line-height: 1; text-align: center;">Shifting Balance: The Changing Sex Ratio in Odisha</h2>
+  
+  <p style = "padding-top: 0.5em; 
+                padding-left: 20%;
+                padding-right: 20%;
+                text-align: justify;
+                line-height: 1.4;">
+    The sex ratio, defined as the number of females per 1,000 males, is a vital demographic indicator
+    that reflects gender equity and the overall social health of a population. It influences marriage 
+    patterns, labour force participation, fertility rates, and the demographic dividend. Sex ratio is 
+    a key measure for guiding gender-sensitive policies and promoting inclusive and sustainable development.
+ <br>
+    <div style="text-align: center;">
+    <h3>Sex Ratio in Odisha (1901- 2036)</h3>    
+        <img src="sexratio.png" alt="Population Trends" 
+            style="width: 35%; height: auto; border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <p style = "font-size: small;">
+        <i>
+            Source: Census of India 2011, Population Projection for 
+            Odisha using Bayesian approach, DIU, 2021-36
+        </i>
+    </p>
+    </div>
+    </p>
+    <p style = "padding-top: 0.5em; 
+                padding-left: 20%;
+                padding-right: 20%;
+                text-align: justify;
+                line-height: 1.4;">
+    Odisha was among the few states in India that consistently recorded a higher sex ratio up to 
+    the 1961 Census, reflecting a relative female advantage. This trend was influenced by cultural 
+    and traditional norms, a predominantly rural population, high male out-migration, and elevated 
+    birth and death rates. However, the sex ratio has shown a declining trend over the decades, 
+    from 1,086 females per 1,000 males in 1921 to 971 in the 1991 Census, indicating a gradual 
+    shift towards a less favourable demographic balance for women. The sex ratio has been improving 
+    since then, reaching 979 by the 2011 census, and by 2036, it is projected to exceed 1000, 
+    indicating a positive shift toward gender balance. <br><br>
+    The improvement in the sex ratio is driven by enhanced healthcare, maternal and child health programs,
+    and gender-focused policies, which have reduced gender disparities. Efforts to promote female literacy,
+    curb sex-selective practices, and improve women's life expectancy have further contributed to this 
+    trend.
+    </p>
+  <!-- Inserts Space b/w footer and content -->
+  <div style="margin-top: 25px;"></div>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Odisha Data Portal. Powered by CYSD.</p>
+    </div>
+  </footer>
+</body>
+</html>

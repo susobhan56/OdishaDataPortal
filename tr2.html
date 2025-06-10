@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odisha Data Portal</title>
+  <link rel="stylesheet" href="style.css">
+
+
+<!-- CSS Section --> 
+<style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.4;
+      background: #dcfafe;
+      overflow-x: hidden;
+      margin: 0;
+    }
+    header {
+      background: #f8e6e6;
+      color: #100526;
+      padding: 5px 0 0 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;  
+    }
+    header h1 {
+      text-align: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 42px;
+      font-style: normal;
+      font-weight:normal;
+      text-transform: uppercase;
+    }
+    nav ul {
+      display: flex;
+      background: #727272;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 38px;
+      margin: 0;
+      padding: 7px;
+    }
+    nav a {
+      text-decoration: none;
+      color: rgb(236, 236, 239);
+      font-weight: bold;
+      font-family: Segoe UI;
+    }
+    nav a:hover {
+      background: rgb(9, 7, 139);
+      padding: 5px;
+      border-radius: 5px;
+      transition: background 0.6s ease;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 350px;
+    }
+    .see-all-link {
+      transition: background 0.5s, color 0.3s;
+      border-radius: 9px;
+      margin-left: 0px;
+      display: inline-block;
+    }
+    .see-all-link:hover {
+      background: #b3b6f4;
+      color: #100526;
+      padding: 0.3em
+    }
+    .vertical-divider {
+      width: 1.5px; /* Increased width */
+      background: #a3a3a3;
+      border-radius: 4px;
+      margin-left: 20px;
+      height: auto;
+      align-self: stretch;
+    }
+    footer {
+      background: #ffffff;
+      color: rgb(18, 20, 54);
+      font-weight: bold;
+      text-align: center;
+      font-size: larger;
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+      padding: 1em;
+    }
+</style>
+
+
+
+
+</head>
+<body>
+   
+<!-- Header & Navigation Bar Section -->
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center; 
+                    padding-top: 10px;">
+            <img src="Images/ODPLogo.png" alt="Odisha Logo" style="width: 130px; 
+                        height: 120px; vertical-align: middle; border-radius: 8px;">
+            <h1 style="margin: 0; font-size: 42px; margin-right: 50px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 
+            'Trebuchet MS', sans-serif; font-weight: normal; text-transform: uppercase; color: #100526;">
+                Odisha Data Portal
+            </h1>
+        </div>
+        <nav>
+            <ul class="flex">
+                <li><a href="Demography/demographyL2.html">Demography</a></li>
+                <li><a href="Health/healthL2.html">Health</a></li>
+                <li><a href="Education/educationL2.html">Education</a></li>
+                <li><a href="Employment/employmentL2.html">Employment</a></li>
+                <li><a href="Migration & Urbanization/m&uL2.html">Migration & Urbanization</a></li>
+                <li><a href="Ageing/ageingL2.html">Ageing</a></li>
+                <li><a href="#">Repository</a></li>
+                <li><a href="Contact Us/contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<!-- Main Content Section -->
+    <main>
+
+    <div style="position: relative; margin-bottom: 50px; display: flex; justify-content: center;">
+        <div class="card" style="
+            background-image: url(Images/demo222.png);
+            padding: 10px;
+            position: relative;
+            z-index: 1;
+            background-size: cover;
+            background-position: center;
+            color: #222;
+            text-align: center;
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 18px;
+            overflow: hidden;
+            display: flex;
+            margin-top: 30px;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+        ">
+            <span style="position: relative; z-index: 2;">
+                <p style = "font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">
+                    Welcome to the Odisha Data Portal, your comprehensive source for<br> 
+                    <b>Demographic, Health, Education, Employment, Migration, Urbanization,</b>
+                    and <b>Ageing</b> in Odisha.
+                </p>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Explore our latest insights and trends to understand the
+                        evolving landscape of our state.</p>
+            </span>
+            <!-- Overlay for transparency -->
+            <span style="
+                position: absolute;
+                top: 0; left: 0; right: 0; bottom: 0;
+                background: rgba(255,255,255,0.8);
+                border-radius: 18px;
+                z-index: 1;
+                pointer-events: none;">
+            </span>
+        </div>
+    </div>
+      <!-- Top Row -->
+      <section class="dashboard-row" style="display: flex; gap: 0; align-items: stretch; margin-bottom: 32px;">
+        
+        
+        
+        
+        
+        <!-- Demography (Left) -->
+        <div style="flex: 1; padding: 24px;">
+          <div class="card" style="height: 100%;">
+            <!-- Demography content -->
+            <h3>
+              <a href="Demography/demographyL2.html" style="font-size: 13px; text-decoration: none; font-weight: bold; color:rgb(4, 28, 88)">
+                Demography
+              </a>
+            </h3>
+            <h4 style="font-size: 22px; line-height: 1.3;">
+              <a href="Demography/Lv 3/poptre.html" style="text-decoration: none; color: black; font-weight: bold;">
+                Odisha’s Slowing Population Growth: A Quiet Transition
+              </a>
+            </h4>
+            <h5 style="font-size: 12px; font-weight: bold; color: #100526;">
+              04 June 2025
+            </h5>
+            <p style="font-size: 17px; line-height: 1.3;">
+              Odisha’s population grew from 1.46 crore in 1951 to 4.19 crore in 2011, 
+              but growth rates have steadily declined. This slowdown reflects a demographic 
+              shift marked by lower birth and death rates. Despite this, the state is 
+              projected to reach 5.15 crore by 2036, mainly due to increased life expectancy
+              and population momentum
+            </p>
+            <p style="text-align:center;">
+                <a href="Demography/Lv 3/poptre.html" style="text-decoration: none; color: black; 
+                                                                font-weight: bold;">
+                    <img src="Images/Pop Trends.png" alt="Population Trends" style="width:80%; 
+                    height:auto; border-radius:10px; box-shadow:5px 4px 8px rgba(0,0,0,0.1);">
+                </a>
+            </p>
+            <p>
+              <a href="Demography/Lv 3/poptre.html" class="see-all-link" style="text-decoration: none; 
+                        color: black; font-weight: bold;">
+                More
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="vertical-divider" style="width:2px; background:#a3a3a3; border-radius:4px; 
+                margin: 0 0 0 0;"></div>
+        
+        
+        
+        
+        
+        <!-- Health & Education (Right, stacked) -->
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 0; padding: 24px 24px 24px 24px;">
+          <!-- Health (Top) -->
+          <div class="card" style="margin-bottom: 16px; display: flex; align-items: center;">
+            <div style="flex:2;">
+              <h3>
+                <a href="Health/healthL2.html" style="font-size: 13px; text-decoration: none; font-weight: bold; 
+                                    color:rgb(4, 28, 88)">
+                  Health
+                </a>
+              </h3>
+              <h4 style="font-size: 22px; line-height: 1.3;">
+                <a href="Health/Lv 3/ncds.html" style="text-decoration: none; color: black; font-weight: bold;">
+                  Hypertension and Diabetes on the Rise in Odisha
+                </a>
+              </h4>
+              <h5 style="font-size: 12px; font-weight: bold; color: #100526;">
+                09 June 2025
+              </h5>
+              <p style="font-size: 17px; line-height: 1.3;">
+                Odisha faces rising health challenges as non-communicable diseases 
+                like hypertension and diabetes increase, especially with an aging population.
+              </p>
+              <a href="Health/Lv 3/ncds.html" class="see-all-link" style="text-decoration: none; color: black; font-weight: bold;">
+                More
+              </a>
+            </div>
+            <div style="flex:1; text-align:center;">
+                <a href="Health/Lv 3/ncds.html" style="text-decoration: none; color: black; font-weight: bold;">
+                <img src="Images/NCDs.png" alt="Non-Communicable Diseases Chart"
+                    style="width: 320px; height: 250px; border-radius: 10px; box-shadow: 
+                    5px 4px 8px rgba(0,0,0,0.1); margin-left: 10px; margin-top: 5%;">
+                </a>
+            </div>
+          </div>
+          <!-- Divider between Health and Education -->
+          <div style="height:2px; background:#a3a3a3; border-radius:4px; margin: 0 0 0 0;"></div>
+          
+          
+          
+          <!-- Education (Bottom) -->
+          <div class="card" style="margin-top: 16px;">
+            <h3>
+              <a href="#" style="font-size: 13px; text-decoration: none; font-weight: bold; color:rgb(4, 28, 88)">
+                Education
+              </a>
+            </h3>
+            <h4 style="font-size: 20px; line-height: 1.3;">
+              <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Education Headline Here
+              </a>
+            </h4>
+            <h5 style="font-size: 12px; font-weight: bold; color: #100526;">
+              09 June 2025
+            </h5>
+            <p style="font-size: 16px; line-height: 1.3;">
+              Brief description about education trends or insights in Odisha.
+            </p>
+            <a href="#" class="see-all-link" style="text-decoration: none; color: black; font-weight: bold;">
+              More
+            </a>
+          </div>
+        </div>
+      </section>
+      <hr style="border: none; border-top: 2px solid #a3a3a3; margin: 0 0 32px 0;">
+      <!-- Middle Row: Ageing Full Width -->
+      <section class="dashboard-row" style="margin-bottom: 32px;">
+        <div class="card" style="width: 96%; margin: 0 auto;">
+          <h3>
+            <a href="#" style="font-size: 13px; text-decoration: none; font-weight: bold; color:rgb(4, 28, 88)">
+              Ageing
+            </a>
+          </h3>
+          <h4 style="font-size: 22px; line-height: 1.3;">
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+              Ageing Population: Challenges and Opportunities
+            </a>
+          </h4>
+          <h5 style="font-size: 12px; font-weight: bold; color: #100526;">
+            09 June 2025
+          </h5>
+          <p style="font-size: 17px; line-height: 1.3;">
+            Odisha's ageing population is growing, presenting both challenges and opportunities for the state's social and healthcare systems.
+          </p>
+          <a href="#" class="see-all-link" style="text-decoration: none; color: black; font-weight: bold;">
+            More
+          </a>
+        </div>
+      </section>
+      <hr style="border: none; border-top: 2px solid #a3a3a3; margin: 0 0 32px 0;">
+      <!-- Bottom Row -->
+      <section class="dashboard-row" style="display: flex; gap: 0; align-items: stretch;">
+        <!-- Migration (Left) -->
+        <div style="flex: 1; padding: 24px;">
+          <div class="card" style="height: 100%;">
+            <h3>
+              <a href="#" style="font-size: 13px; text-decoration: none; font-weight: bold; color:rgb(4, 28, 88)">
+                Migration
+              </a>
+            </h3>
+            <h4 style="font-size: 20px; line-height: 1.3;">
+              <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Migration Headline Here
+              </a>
+            </h4>
+            <h5 style="font-size: 12px; font-weight: bold; color: #100526;">
+              09 June 2025
+            </h5>
+            <p style="font-size: 16px; line-height: 1.3;">
+              Brief description about migration trends or insights in Odisha.
+            </p>
+            <a href="#" class="see-all-link" style="text-decoration: none; color: black; font-weight: bold;">
+              More
+            </a>
+          </div>
+        </div>
+        <div class="vertical-divider" style="width:2px; background:#a3a3a3; border-radius:4px; margin: 0 0 0 0;"></div>
+        <!-- Urbanization (Right) -->
+        <div style="flex: 1; padding: 24px;">
+          <div class="card" style="height: 100%;">
+            <h3>
+              <a href="#" style="font-size: 13px; text-decoration: none; font-weight: bold; color:rgb(4, 28, 88)">
+                Urbanization
+              </a>
+            </h3>
+            <h4 style="font-size: 20px; line-height: 1.3;">
+              <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Urbanization Headline Here
+              </a>
+            </h4>
+            <h5 style="font-size: 12px; font-weight: bold; color: #100526;">
+              09 June 2025
+            </h5>
+            <p style="font-size: 16px; line-height: 1.3;">
+              Brief description about urbanization trends or insights in Odisha.
+            </p>
+            <a href="#" class="see-all-link" style="text-decoration: none; color: black; font-weight: bold;">
+              More
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+ <!-- Inserts Space b/w footer and content -->
+  <div style="margin-top: 7.3%;">        
+  </div>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Odisha Data Portal. Powered by CYSD.</p>
+    </div>
+  </footer>
+</body>
+</html>

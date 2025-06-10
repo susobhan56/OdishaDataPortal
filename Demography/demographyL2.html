@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odisha Data Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.4;
+      background: #dcfafe;
+      overflow-x: hidden;
+      margin: 0;
+    }
+    header {
+      background: #f8e6e6;
+      color: #100526;
+      padding: 5px 0 0 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;  
+    }
+    header h1 {
+      text-align: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 42px;
+      font-style: normal;
+      font-weight:normal;
+      text-transform: uppercase;
+    }
+    nav ul {
+      display: flex;
+      background: #727272;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 38px;
+      margin: 0;
+      padding: 7px;
+    }
+    nav a {
+      text-decoration: none;
+      color: rgb(236, 236, 239);
+      font-weight: bold;
+      font-family: Segoe UI;
+    }
+    nav a:hover {
+      background: rgb(9, 7, 139);
+      padding: 5px;
+      border-radius: 5px;
+      transition: background 0.6s ease;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 350px;
+    }
+    .see-all-link {
+      transition: background 0.5s, color 0.3s;
+      border-radius: 9px;
+      margin-left: 0px;
+      display: inline-block;
+    }
+    .see-all-link:hover {
+      background: #b3b6f4;
+      color: #100526;
+      padding: 0.3em
+    }
+    .vertical-divider {
+      width: 1.5px; /* Increased width */
+      background: #a3a3a3;
+      border-radius: 4px;
+      margin-left: 20px;
+      height: auto;
+      align-self: stretch;
+    }    
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 900px;
+      height: fit-content;
+      padding: 2em 0 0 0;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2em;
+      border-radius: 15px;
+      border: none;
+      margin-bottom: 0;
+      text-align: left;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      width: 100%;
+      line-height: 1.5;
+      max-width: 770px;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .see-all-link {
+      transition: background 0.5s, color 0.3s;
+      border-radius: 5px;
+      padding: 5px;
+      display: inline-block;
+    }
+    .see-all-link:hover {
+      background: #b3b6f4;
+      color: #100526;
+    }
+    .card-content {
+      display: block;
+      width: 100%;
+    }
+    section {
+      position: relative;
+      padding: 2em 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    footer {
+      background: #ffffff;
+      color: rgb(18, 20, 54);
+      font-weight: bold;
+      text-align: center;
+      font-size: larger;
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+      padding: 1em;
+    }
+ 
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation Section -->    
+  <header>
+        <div style="display: flex; align-items: center; justify-content: center; 
+                    padding-top: 10px;">
+            <img src="../Images/ODPLogo.png" alt="Odisha Logo" style="width: 130px; 
+                        height: 120px; vertical-align: middle; border-radius: 8px;">
+            <h1 style="margin: 0; font-size: 42px; margin-right: 50px;
+                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+                      font-weight: normal; text-transform: uppercase; color: #100526;">
+                      <a href = "../tr2.html" style="text-decoration: none; color:hsl(245, 100%, 12%)">
+                Odisha Data Portal
+                      </a>
+            </h1>
+        </div>
+        <nav>
+            <ul class="flex">
+                <li><a href="#" style = "background: rgb(9, 17, 139); 
+                padding: 5px; border-radius: 5px;">Demography</a></li>
+                <li><a href="../Health/healthL2.html">Health</a></li>
+                <li><a href="../Education/educationL2.html">Education</a></li>
+                <li><a href="../Employment/employmentL2.html">Employment</a></li>
+                <li><a href="../Migration & Urbanization/m&uL2.html">Migration & Urbanization</a></li>
+                <li><a href="../Ageing/ageingL2.html">Ageing</a></li>
+                <li><a href="#">Repository</a></li>
+                <li><a href="../Contact Us/contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<br><br><br>
+  <h2 style="text-align: center;">Demography</h2>
+  <p style = "padding-top: 0.5em; 
+                padding-left: 20%;
+                padding-right: 20%;
+                text-align: justify;
+                line-height: 1.4;">
+    Despite its status as one of India's poorest states by per capita income and industrial 
+    output, Odisha has achieved remarkable success in fertility reduction, 
+    with its Total Fertility Rate (TFR) dropping to 1.8 (NFHS-5, 2019-21) – 
+    consistently below the national average since 1990. This rapid decline, amidst challenges
+    like high childhood mortality and unfavourable economic conditions, presents a 
+    "demographic dilemma" that raises critical questions about future population size and the
+    quality of human resources as the state's age structure shifts. Given the varying stages
+    of demographic transition across Indian states and the absence of a comprehensive census 
+    since 2011, this platform is designed to bridge a significant data gap. <br><br>
+    As a vital public resource, this platform provides a comprehensive repository of 
+    Odisha's demographic data and relevant research publications. 
+    Our in-depth analysis of Odisha's demographic transition, leading up 
+    to its 2036 millennial milestone, includes key trends, projections, and 
+    regional disparities, informing policy across crucial sectors like Health, Education, 
+    Employment, Migration, Urbanization, and Population Ageing. By offering accessible, 
+    reliable data and cutting-edge insights, it aims to foster a richer and more diverse 
+    discourse, encourage evidence-based decision-making, and ultimately contribute to more 
+    effective and equitable development strategies throughout the state.
+</p>
+<!-- Content Section -->
+  <section class="cards">
+  
+  <!-- Card 1 -->
+  
+    <div class="card">
+        <div style="display: flex; align-items: flex-start;">
+            <div style="flex: 2;">
+            <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                        font-size: 24;">
+                <a href="Lv 3/poptre.html" style="text-decoration: none; color:hsl(245, 100%, 12%)">
+                Odisha’s Slowing Population Growth: A Quiet Transition
+                </a>
+            </h3>
+            <p>
+                Odisha’s population grew from 1.46 crore in 1951 to 4.19 crore in 2011, 
+                but growth rates have steadily declined. This slowdown reflects a demographic 
+                shift marked by lower birth and death rates. Despite this, the state is 
+                projected to reach 5.15 crore by 2036, mainly due to increased life expectancy
+                and population momentum
+            </p>
+            <p>
+                <b>
+                <a href="Lv 3/poptre.html" class="see-all-link"
+                          style="text-decoration: none; color: black;">
+                    More
+                </a>
+                </b>
+            </p>
+            </div>
+            <div style="flex: 2; margin-left: 40px;">
+                <a href="Lv 3/poptre.html">
+                    <img src="Images/Pop Trends.png" alt="Descriptive text" 
+                        style="width: 350px; height: 240px; margin-top: 3.5em; 
+                                border-radius: 10px; 
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card 2 -->
+    
+    <div class="card">
+        <div style="display: flex; align-items: flex-start;">
+            <div style="flex: 2;">
+            <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                        font-size: 24;">
+                <a href="Lv 3/agestruc.html" style="text-decoration: none; color:hsl(245, 100%, 12%)">
+                Odisha’s Age Shift: Turning Demographic Change into Opportunity
+                </a>
+            </h3>
+            <p>
+                Odisha is undergoing a major transformation in its population age structure. 
+                With a shrinking child and youth population and a growing elderly segment, 
+                the state’s working-age group is at its peak, offering a short window for
+                economic gain. This shift demands urgent policy focus to harness the 
+                demographic dividend while preparing for rising ageing-related needs in 
+                healthcare and social support.
+            </p>
+            <p>
+                <b>
+                <a href="Lv 3/agestruc.html" class="see-all-link"
+                    style="text-decoration: none; color: black;">
+                    More
+                </a>
+                </b>
+            </p>
+            </div>
+            <div style="flex: 2; margin-left: 40px;">
+                <a href="Lv 3/agestruc.html">
+                    <img src="Images/Age Struc.png" alt="Descriptive text" 
+                        style="width: 350px; height: 300px; margin-top: 3.5em; 
+                                border-radius: 10px; 
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    
+    <div class="card">
+        <div style="display: flex; align-items: flex-start;">
+            <div style="flex: 2;">
+            <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                        font-size: 24;">
+                <a href="Lv 3/sexratio.html" style="text-decoration: none; color:hsl(245, 100%, 12%)">
+                Shifting Balance: The Changing Sex Ratio in Odisha
+                </a>
+            </h3>
+            <p>
+                Once known for its favourable sex ratio, Odisha has witnessed a steady decline over
+                the decades. From a peak of 1,086 females per 1,000 males in 1921 to 979 in 2011, this
+                shift signals emerging gender imbalances shaped by socio-economic and demographic changes.
+            </p>
+            <p>
+                <b>
+                <a href="Lv 3/sexratio.html" class="see-all-link"
+                    style="text-decoration: none; color: black;">
+                    More
+                </a>
+                </b>
+            </p>
+            </div>
+            <div style="flex: 2; margin-left: 40px;">
+                <a href="Lv 3/sexratio.html">
+                    <img src="Images/Sex Ratio.png" alt="Descriptive text" 
+                        style="width: 350px; height: 240px; margin-top: 3.5em; 
+                                border-radius: 10px; 
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Card 4 -->
+ 
+    <div class="card">
+        <div style="display: flex; align-items: flex-start;">
+            <div style="flex: 2;">
+            <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                        font-size: 24;">
+                <a href="Lv 3/tfr.html" style="text-decoration: none; color:hsl(245, 100%, 12%)">
+                Falling Fertility, Rising Questions: Odisha at a Demographic Tipping Point
+                </a>
+            </h3>
+            <p>
+                Odisha’s fertility rate has steadily declined, reaching 1.8 in 2021 and
+                projected to fall to 1.48 by 2036. While urban TFR is as low as 1.2, rural 
+                areas report 1.9. This shift demands targeted policies for ageing, workforce
+                sustainability, and regional investment in health, education, and skills.
+            </p>
+            <p>
+                <b>
+                <a href="Lv 3/tfr.html" class="see-all-link"
+                  style="text-decoration: none; color: black;">
+                    More
+                </a>
+                </b>
+            </p>
+            </div>
+            <div style="flex: 2; margin-left: 40px;">
+                <a href="Lv 3/tfr.html">
+                    <img src="Images/TFR.png" alt="Descriptive text" 
+                        style="width: 350px; height: 240px; margin-top: 3.5em; 
+                                border-radius: 10px; 
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- More cards as needed -->
+</section>
+
+  <!-- Inserts Space b/w footer and content -->
+  <div style="margin-top: 7.3%;">        
+  </div>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Odisha Data Portal. Powered by CYSD.</p>
+    </div>
+  </footer>
+</body>
+</html>

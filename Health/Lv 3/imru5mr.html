@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odisha Data Portal</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.4;
+      background: #dcfafe;
+      overflow-x: hidden;
+      margin: 0;
+    }
+    header {
+      background: #f8e6e6;
+      color: #100526;
+      padding: 5px 0 0 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;  
+    }
+    header h1 {
+      text-align: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 42px;
+      font-style: normal;
+      font-weight:normal;
+      text-transform: uppercase;
+    }
+    nav ul {
+      display: flex;
+      background: #727272;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 38px;
+      margin: 0;
+      padding: 7px;
+    }
+    nav a {
+      text-decoration: none;
+      color: rgb(236, 236, 239);
+      font-weight: bold;
+      font-family: Segoe UI;
+    }
+    nav a:hover {
+      background: rgb(9, 7, 139);
+      padding: 5px;
+      border-radius: 5px;
+      transition: background 0.6s ease;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 350px;
+    }
+    .see-all-link {
+      transition: background 0.5s, color 0.3s;
+      border-radius: 9px;
+      margin-left: 0px;
+      display: inline-block;
+    }
+    .see-all-link:hover {
+      background: #b3b6f4;
+      color: #100526;
+      padding: 0.3em
+    }
+    .vertical-divider {
+      width: 1.5px; /* Increased width */
+      background: #a3a3a3;
+      border-radius: 4px;
+      margin-left: 20px;
+      height: auto;
+      align-self: stretch;
+    }    
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 900px;
+      height: fit-content;
+      padding: 2em 0 0 0;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2em;
+      border-radius: 15px;
+      border: none;
+      margin-bottom: 0;
+      text-align: left;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      width: 100%;
+      line-height: 1.5;
+      max-width: 770px;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .see-all-link {
+      transition: background 0.5s, color 0.3s;
+      border-radius: 9px;
+      padding: 1em;
+      display: inline-block;
+    }
+    .see-all-link:hover {
+      background: #b3b6f4;
+      color: #100526;
+    }
+    .card-content {
+      display: block;
+      width: 100%;
+    }
+    section {
+      position: relative;
+      padding: 2em 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    footer {
+      background: #ffffff;
+      color: rgb(18, 20, 54);
+      font-weight: bold;
+      text-align: center;
+      font-size: larger;
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+      padding: 1em;
+    }
+ 
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation Section -->    
+  <header>
+        <div style="display: flex; align-items: center; justify-content: center; 
+                    padding-top: 10px; gap: 0">
+            <img src="../../Images/ODPLogo.png" alt="Odisha Logo" style="width: 130px; 
+                        height: 120px; vertical-align: middle; border-radius: 8px;">
+            <h1 style="margin: 0; font-size: 42px; font-family:'Gill Sans', 
+                      'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-right: 50px;
+                      font-weight: normal; text-transform: uppercase; color: #100526;">
+                      <a href = "../../tr2.html" style="text-decoration: none; color:hsl(245, 100%, 12%)">
+                Odisha Data Portal
+                      </a>
+            </h1>
+        </div>
+        <nav>
+            <ul class="flex">
+                <li><a href="../../Demography/demographyL2.html">Demography</a></li>
+                <li><a href="../healthL2.html">Health</a></li>
+                <li><a href="../../Education/educationL2.html">Education</a></li>
+                <li><a href="../../Employment/employmentL2.html">Employment</a></li>
+                <li><a href="../../Migration & Urbanization/m&uL2.html">Migration & Urbanization</a></li>
+                <li><a href="../../Ageing/ageingL2.html">Ageing</a></li>
+                <li><a href="../../Contact Us/contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>  
+<br><br>
+  <h2 style="text-align: center;">
+    Below Replacement, But Not Beyond Risk: The Silent Crisis of Child Mortality in Odisha
+  </h2>
+  
+  <p style = "padding-top: 0.5em; 
+                padding-left: 20%;
+                padding-right: 20%;
+                text-align: justify;
+                line-height: 1.4;">
+    Child health is one of the most important aspects for understanding the current health conditions and 
+    future health status of the population in the state. The important indicators to understand this aspect
+    include Infant Mortality Rate (IMR), Under-five Mortality Rate (U5MR), nutritional status, causes of 
+    death, and prevalence of chronic diseases in children, among others.  <br><br>
+
+    Despite achieving replacement-level fertility since 2013 (SRS- 2014) and a declining trend in
+    child mortality, Odisha still has relatively high infant mortality rates, implying more severe 
+    conditions than underdeveloped regions with relatively high fertility and high mortality rates.<br>
+    <div style="text-align: center;">
+    <h3>Trends in IMR & U5MR in Odisha</h3>    
+        <img src="IMRU5MR.png" alt="Population Trends" 
+            style="width: 42%; height: auto; border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <p style = "font-size: small;">
+        <i>
+            Source: NFHS-4,5
+        </i>
+    </p>
+    </div>
+    </p>
+    <p style = "padding-top: 0.5em; 
+                padding-left: 20%;
+                padding-right: 20%;
+                text-align: justify;
+                line-height: 1.4;">
+    Odisha is facing a unique population challenge: while families are choosing to have fewer children 
+    (a declining birth rate), unfortunately, too many babies and young children are still dying before 
+    their fifth birthday. <br><br>
+    Normally, having fewer children is a sign of progress, leading to slower population growth and 
+    potentially a stronger workforce in the future. However, when child deaths remain high, it means that 
+    even though there are fewer births, the children who are born aren't surviving at the rate they should. 
+    This points to serious issues in our healthcare system, particularly regarding the quality of care for 
+    mothers and children, and access to good nutrition, especially in villages and tribal areas.<br><br>
+    This situation creates a tough problem for Odisha's future. If fewer children are being born and a 
+    significant number of them don't survive to adulthood, our future workforce could shrink. This might 
+    slow down economic growth. On a personal level, families face immense emotional and financial stress 
+    from losing children. To truly benefit from having smaller families and to build a strong future, 
+    Odisha must urgently improve child health services and reduce child mortality. This will ensure that 
+    every child born has the chance to thrive, contributing to a healthier and more prosperous state.
+</p>
+  <!-- Inserts Space b/w footer and content -->
+  <div style="margin-top: 25px;"></div>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Odisha Data Portal. Powered by CYSD.</p>
+    </div>
+  </footer>
+</body>
+</html>

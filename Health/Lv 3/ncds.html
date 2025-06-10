@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odisha Data Portal</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.4;
+      background: #dcfafe;
+      overflow-x: hidden;
+      margin: 0;
+    }
+    header {
+      background: #f8e6e6;
+      color: #100526;
+      padding: 5px 0 0 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;  
+    }
+    header h1 {
+      text-align: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 42px;
+      font-style: normal;
+      font-weight:normal;
+      text-transform: uppercase;
+    }
+    nav ul {
+      display: flex;
+      background: #727272;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 38px;
+      margin: 0;
+      padding: 7px;
+    }
+    nav a {
+      text-decoration: none;
+      color: rgb(236, 236, 239);
+      font-weight: bold;
+      font-family: Segoe UI;
+    }
+    nav a:hover {
+      background: rgb(9, 7, 139);
+      padding: 5px;
+      border-radius: 5px;
+      transition: background 0.6s ease;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 350px;
+    }
+    .see-all-link {
+      transition: background 0.5s, color 0.3s;
+      border-radius: 9px;
+      margin-left: 0px;
+      display: inline-block;
+    }
+    .see-all-link:hover {
+      background: #b3b6f4;
+      color: #100526;
+      padding: 0.3em
+    }
+    .vertical-divider {
+      width: 1.5px; /* Increased width */
+      background: #a3a3a3;
+      border-radius: 4px;
+      margin-left: 20px;
+      height: auto;
+      align-self: stretch;
+    }    
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 900px;
+      height: fit-content;
+      padding: 2em 0 0 0;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2em;
+      border-radius: 15px;
+      border: none;
+      margin-bottom: 0;
+      text-align: left;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      width: 100%;
+      line-height: 1.5;
+      max-width: 770px;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .see-all-link {
+      transition: background 0.5s, color 0.3s;
+      border-radius: 9px;
+      padding: 1em;
+      display: inline-block;
+    }
+    .see-all-link:hover {
+      background: #b3b6f4;
+      color: #100526;
+    }
+    .card-content {
+      display: block;
+      width: 100%;
+    }
+    section {
+      position: relative;
+      padding: 2em 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    footer {
+      background: #ffffff;
+      color: rgb(18, 20, 54);
+      font-weight: bold;
+      text-align: center;
+      font-size: larger;
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+      padding: 1em;
+    }
+ 
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation Section -->    
+  <header>
+        <div style="display: flex; align-items: center; justify-content: center; 
+                    padding-top: 10px; gap: 0">
+            <img src="../../Images/ODPLogo.png" alt="Odisha Logo" style="width: 130px; 
+                        height: 120px; vertical-align: middle; border-radius: 8px;">
+            <h1 style="margin: 0; font-size: 42px; font-family:'Gill Sans', 
+                      'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-right: 50px;
+                      font-weight: normal; text-transform: uppercase; color: #100526;">
+                      <a href = "../../tr2.html" style="text-decoration: none; color:hsl(245, 100%, 12%)">
+                Odisha Data Portal
+                      </a>
+            </h1>
+        </div>
+        <nav>
+            <ul class="flex">
+                <li><a href="../../Demography/demographyL2.html">Demography</a></li>
+                <li><a href="../healthL2.html">Health</a></li>
+                <li><a href="../../Education/educationL2.html">Education</a></li>
+                <li><a href="../../Employment/employmentL2.html">Employment</a></li>
+                <li><a href="../../Migration & Urbanization/m&uL2.html">Migration & Urbanization</a></li>
+                <li><a href="../../Ageing/ageingL2.html">Ageing</a></li>
+                <li><a href="../../Contact Us/contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>  
+<br><br>
+  <h2 style="text-align: center;">Hypertension and Diabetes on the Rise: Odisha’s Cross-Generational Health Crisis</h2>
+  
+  <p style = "padding-top: 0.5em; 
+                padding-left: 20%;
+                padding-right: 20%;
+                text-align: justify;
+                line-height: 1.4;">
+    The evolving disease landscape, coupled with shifting demographics—especially the growing 
+    proportion of elderly individuals—presents substantial challenges. Non-communicable diseases (NCDs)
+    such as hypertension and diabetes are widespread among millions of elderly citizens, who require 
+    long-term management and face an increased risk of complications. Alarmingly, these diseases are also 
+    affecting younger age groups, further increasing their burden across the population. Using age-specific
+    prevalence data sourced from the National Family Health Survey (NFHS-5, 2019-21) for 
+    the age group 15-49 years and the Longitudinal Aging Study in India (LASI Wave-1, 2018) for 
+    individuals aged 50 and above, projections have been made to estimate the total hypertensive and 
+    diabetic populations across various years <br><br>
+    In 2021, approximately 8.67 million people aged 15 and above were afflicted with hypertension, a 
+    number estimated to rise to 10.8 million in the year 2036. Among those aged 50 and above, females
+    are anticipated to outnumber males in hypertension prevalence. Similarly, in 2021, 3.97 million people 
+    aged 15 to 49 had diabetes, with this number projected to increase to 4.10 million by 2036. 
+    Non-communicable diseases (NCDs), such as hypertension and diabetes, are lifelong conditions that 
+    negatively impact quality of life. As Odisha continues to struggle with child malnutrition and anaemia, 
+    the increasing prevalence of NCDs will further increase the economic burden on the state. 
+    Strengthening the health system and designing interventions, especially in primary care setting, 
+    are essential to address the increasing prevalence of NCD challenge in Odisha. Furthermore, the 
+    gradual decline in the share of the 0 to 4-year population in the total population will free up 
+    resources and manpower previously used to combat childhood illness and deaths. This can now be 
+    redirected to support the elderly population. <br>
+    <div style="text-align: center;">
+    <h3>Number of Hypertension & Diabetes Patients (in millions) in Odisha by 2036</h3>    
+        <img src="NCDs.png" alt="Population Trends" 
+            style="width: 42%; height: auto; border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <p style = "font-size: small;">
+        <i>
+            Source: The prevalence rate in the past surveys 
+            (for people aged 15-49 years- NFHS-5 & for people aged above 49 years- LASI wave-1)<br> 
+            has been multiplied by the projected population figure of the DIU, CYSD to get the size 
+            of healthcare requirements.
+            <br><b>*</b> It has been assumed that the prevalence of Hypertension & Diabetes will remain the same over the period. 
+
+        </i>
+    </p>
+    </div>
+    </p>
+    <p style = "padding-top: 0.5em; 
+                padding-left: 20%;
+                padding-right: 20%;
+                text-align: justify;
+                line-height: 1.4;">
+    The elderly population in Odisha faces a significant burden of non-communicable diseases (NCDs), 
+    similar to trends seen globally and across India. The most prevalent health issue among Odisha’s 
+    elderly is hypertension, with a substantial proportion of them showing pre-hypertension (41.6%) 
+    compared to the national average (39.3%). While the prevalence of high blood pressure (30.8%) is 
+    lower than the national figure (36.1%), a sizable percentage of Odisha’s elderly also suffer from 
+    cardiovascular diseases (CVDs), which rise with age. Gastrointestinal and skin disorders are also 
+    more common in Odisha’s elderly population than the national average, indicating gaps in medical care 
+    and access. Chronic bone and joint disorders, such as arthritis (16.7%), rheumatism (1.8%), and 
+    osteoporosis (0.3%), also significantly impact the elderly in the state, though the overall prevalence
+    is slightly lower than the national average.</p>
+  <!-- Inserts Space b/w footer and content -->
+  <div style="margin-top: 25px;"></div>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Odisha Data Portal. Powered by CYSD.</p>
+    </div>
+  </footer>
+</body>
+</html>
