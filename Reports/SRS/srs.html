@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odisha Data Repository</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        background: #f5f6fa;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #222;
+        margin-bottom: 24px;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(60, 60, 60, 0.08);
+        padding: 32px 24px 24px 24px;
+      }
+      .pdf-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 28px;
+      }
+      .pdf-card {
+        background: #f8fafc;
+        border-radius: 10px;
+        box-shadow: 0 1px 4px rgba(60, 60, 60, 0.06);
+        padding: 18px 16px 16px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: box-shadow 0.2s;
+      }
+      .pdf-card:hover {
+        box-shadow: 0 4px 16px rgba(60, 60, 60, 0.13);
+      }
+      .pdf-icon {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 14px;
+      }
+      .pdf-title {
+        font-size: 1.08rem;
+        font-weight: 500;
+        color: #333;
+        text-align: center;
+        margin-bottom: 12px;
+        min-height: 48px;
+      }
+      .pdf-actions {
+        display: flex;
+        gap: 12px;
+      }
+      .pdf-btn {
+        background: #4285f4;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 7px 16px;
+        font-size: 0.98rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.18s;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+      .pdf-btn:hover {
+        background: #1967d2;
+      }
+      .pdf-btn.download {
+        background: #34a853;
+      }
+      .pdf-btn.download:hover {
+        background: #0b8043;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 12px;
+        }
+        h1 {
+          font-size: 1.3rem;
+        }
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        line-height: 1.6;
+        background: #f4f4f4;
+        color: #333;
+      }
+      header {
+        background: #808081;
+        color: #fff;
+        padding: 1em 0;
+      }
+      header h1 {
+        text-align: center;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 80px;
+        margin: 1em 0 0 0;
+        padding: 0;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-family: Segoe UI;
+      }
+      .nav-bar {
+        display: flex;
+        gap: 20px;
+        background-color: #888;
+        padding: 10px 20px;
+      }
+
+      .nav-bar li {
+        list-style: none;
+        position: relative;
+      }
+
+      .nav-bar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        display: block;
+      }
+      .hero {
+        background: #e2e2e2;
+        padding: 2em 0;
+        text-align: center;
+      }
+      .hero h2 {
+        margin-bottom: 0.5em;
+      }
+      .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 2em 0;
+      }
+      .card {
+        background: rgb(238, 199, 199);
+        padding: 2em;
+        border-radius: 15px;
+        border: #808081 1px dotted;
+        width: 75%;
+        margin-bottom: auto;
+      }
+      footer {
+        background: #808081;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: none;
+        color: white;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-sub {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        display: none;
+        background-color: #f1f1f1;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover > a {
+        background-color: hsl(2, 63%, 50%);
+      }
+      .dropdown:hover .dropdown-sub {
+        display: block;
+      }
+      .dropdown-sub-content {
+        position: relative;
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+      }
+      .dropdown-sub-content:hover {
+        background-color: #ddd;
+      }
+      .dropdown-sub-analyzed {
+        background: #e3f2fd;
+        box-shadow: 0 4px 16px rgba(33, 150, 243, 0.18);
+        border-radius: 8px;
+        margin-top: 4px;
+        padding: 0;
+      }
+      .dropdown-sub-analyzed a {
+        color: #0d47a1;
+        padding: 10px 18px;
+        text-decoration: none;
+        display: block;
+        border-radius: 4px;
+        transition: background 0.2s, color 0.2s;
+      }
+      .dropdown-sub-analyzed a:hover {
+        background: #bbdefb;
+        color: #1565c0;
+        box-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+      }
+
+      /* Raw Datasets submenu styles */
+      .dropdown-sub-raw {
+        background: #fff3e0;
+        box-shadow: 0 4px 16px rgba(255, 152, 0, 0.18);
+        border-radius: 8px;
+        margin-top: 4px;
+        padding: 0;
+      }
+      .dropdown-sub-raw a {
+        color: #e65100;
+        padding: 10px 18px;
+        text-decoration: none;
+        display: block;
+        border-radius: 4px;
+        transition: background 0.2s, color 0.2s;
+      }
+      .dropdown-sub-raw a:hover {
+        background: #ffe0b2;
+        color: #ff6f00;
+        box-shadow: 0 2px 8px rgba(255, 152, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container1">
+        <h1
+          style="
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Odisha Data Repository
+        </h1>
+
+        <nav>
+          <ul class="flex space-x-6 text-white font-semibold">
+            <li><a href="Website.html">Home</a></li>
+            <li>
+              <a href="dashboard.html" onclick="showDashboard()">Dashboard</a>
+            </li>
+            <li class="dropdown">
+              <a href="#">Datasets</a>
+              <div class="dropdown-content">
+                <!-- CYSD Analyzed Datasets Submenu -->
+                <div class="dropdown-sub-parent">
+                  <a
+                    href="analyzed dataset.html"
+                    class="submenu-toggle"
+                    style="color: black"
+                    >CYSD Analyzed Datasets</a
+                  >
+                  <div class="dropdown-sub-analyzed" style="display: none">
+                    <a href="demography cysd dataset.html">Demography</a>
+                    <a href="health cysd dataset.html">Health</a>
+                    <a href="education cysd dataset.html">Education</a>
+                    <a href="ageing cysd dataset.html">Ageing</a>
+                    <a href="employment cysd dataset.html">Employment</a>
+                  </div>
+                </div>
+                <!-- Raw Datasets Submenu -->
+                <div class="dropdown-sub-parent">
+                  <a
+                    href="raw dataset.html"
+                    class="submenu-toggle"
+                    style="color: black"
+                    >Raw Datasets</a
+                  >
+                  <div class="dropdown-sub-raw" style="display: none">
+                    <a href="demography raw dataset.html">Demography</a>
+                    <a href="health raw dataset.html">Health</a>
+                    <a href="education raw dataset.html">Education</a>
+                    <a href="ageing raw dataset.html">Ageing</a>
+                    <a href="employment raw dataset.html">Employment</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#">Reports</a>
+              <div class="dropdown-content">
+                <a href="health.html">Health</a>
+                <a href="education.html">Education</a>
+                <a href="economy.html">Economy</a>
+                <a href="demography.html">Demography</a>
+              </div>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <h1>SRS Reports</h1>
+      <div class="pdf-grid" id="pdfGridDynamic"></div>
+    </div>
+    <script>
+      // Dynamically read PDFs from the SRS-PDFS folder
+      const pdfs = [
+        "Corrigendum_to_SRS_Reports.pdf",
+        "SRS_Bulletin_2011_Vol_47_No_2.pdf",
+        "SRS_Bulletin_2012_Vol_48_No_2.pdf",
+        "SRS_Bulletin_2013_Vol_49_No_1.pdf",
+        "SRS_Bulletin_2014_Vol_50_No_1.pdf",
+        "SRS_Bulletin_2015_Vol_50_No_1.pdf",
+        "SRS_Bulletin_2016_Vol_51_No_1.pdf",
+        "SRS_Bulletin_2017_Vol_52_No_1.pdf",
+        "SRS_Bulletin_2018_Vol_53_No_1.pdf",
+        "SRS_Bulletin_2019_Vol_54_No_1.pdf",
+        "SRS_Bulletin_2020_Vol_55_No_1.pdf",
+        "SRS_Bulletin_2021_Vol_56_No_1.pdf",
+        "SRS_Compendium of India_s Fertility and Mortality Indicators_1971-2013.pdf",
+        "SRS_MMR_Bulletin_2018_2020.pdf",
+        "SRS_STAT_2011.pdf",
+        "SRS_STAT_2012.pdf",
+        "SRS_STAT_2013.pdf",
+        "SRS_STAT_2014.pdf",
+        "SRS_STAT_2015.pdf",
+        "SRS_STAT_2016.pdf",
+        "SRS_STAT_2017.pdf",
+        "SRS_STAT_2018.pdf",
+        "SRS_STAT_2019.pdf",
+        "SRS_STAT_2020.pdf",
+        "SRS-Abridged_Life_Tables_2016-2020.pdf"
+      ];
+      const logos = [
+        "citizen.png",
+        "citizen.png",
+        "citizen.png",
+        "citizen.png",
+        "citizen.png",
+        "citizen.png",
+        "demographic_0.png",
+        "demographic_0.png",
+        "demographic_0.png",
+        "demographic_0.png",
+        "citizen.png",
+        "citizen.png",
+        "citizen.png",
+        "demographic_0.png",
+        "demographic_0.png",
+        "demographic_0.png",
+        "demographic_0.png",
+        "demographic_1.png",
+        "demographic_0.png",
+        "demographic_0.png",
+        "demographic_0.png",
+        "demographic_1.png",
+        "demographic_1.png",
+        "demographic_1.png",
+        "demographic_1.png",
+        "demographic_1.png",
+        "demographic_1.png",
+        "demographic_1.png",
+      ];
+      const pdfGridDynamic = document.getElementById("pdfGridDynamic");
+      pdfGridDynamic.innerHTML = "";
+      pdfs.forEach((filename, index) => {
+        const title = filename.replace(/\.pdf$/, "").replace(/_/g, " ");
+        const encoded = encodeURIComponent(filename).replace(/%20/g, " ");
+        pdfGridDynamic.innerHTML += `
+                <div class="pdf-card">
+                    <img class="pdf-icon" src="Demography-logos/${logos[index]}" alt="PDF icon">
+                    <div class="pdf-title">${title}</div>
+                    <div class="pdf-actions">
+                        <a class="pdf-btn" href="Demography-PDFS/${encoded}" target="_blank">View</a>
+                        <a class="pdf-btn download" href="Demography-PDFS/${encoded}" download>Download</a>
+                    </div>
+                </div>
+            `;
+      });
+    </script>
+  </body>
+</html>
